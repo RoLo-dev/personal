@@ -1,0 +1,167 @@
+@media only screen and (max-width: 1200px) {
+    /* Universal Styles */
+    html {
+        font-size: 16px;
+    }
+
+    /* Specialties */
+    .specialtiesWrap .specialTitle {
+        font-size: 1.2em;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 925px) {
+    /* Universal Styles */
+    .h4Style {
+        margin-bottom: 1.5em;
+    }
+
+    /* Left Column */
+    #leftCol {
+        top: 40%;
+        left: 3%;
+        width: 30%;
+    }
+
+    /* Right Column */
+    #rightCol {
+        left: 35%;
+        right: 1%;
+        width: 64%;
+    }
+
+    /* Specialties */
+    #mySpecialties {
+        margin-bottom: 0;
+    }
+    .specialtiesWrap {
+        height: auto;
+        flex-direction: column;
+    }
+    .specialtiesWrap .specContainer {
+        height: 85%;
+        margin-bottom: 2em;
+    }
+    .specialtiesWrap div:last-child {
+        margin-bottom: 0;
+    }
+
+    /* Projects */
+    .grid {
+        grid-gap: 1em;
+    }
+    .grid div {
+        margin-bottom: 2em;
+    }
+
+    /* Contact */
+    .contactInfo {
+        margin-top: 1.25em;
+        flex-direction: column;
+    }
+    .contactInfo .email,
+    .contactInfo .phone {
+        margin-top: 0.5em;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+    /* Universal Styles */
+    .btn{
+        padding: 12px 5em;
+    }
+    .btn:active {
+        color: #fff;
+        background-color: #4c4c4c;
+        transition: color .3s ease-in-out,
+        background-color .3s ease-in-out;
+    }
+    /* Left Column */
+    #leftCol {
+        display: none;
+    }
+
+    /* Right Column */
+    #rightCol {
+        width: 100%;
+        padding-top: 0;
+        position: inherit;  
+    }
+
+    /* Header */
+    header {
+        width: 100%;
+        height: auto;
+        border-bottom: 0;
+        position: inherit;
+    }
+    #scrollLine {
+        display: none;
+    }
+    #mobileNav {
+        display: block;
+        padding: 1em 0 4em 0;
+    }
+    #mobileNav .navContent {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #mobileNav .navContent .logo {
+        width: 70%;
+    }
+    #mobileNav .open {
+        color: #fff;
+        display: block;
+        font-size: 3em;
+        cursor: pointer;
+    }
+    #mobileNav .navLinks {
+        width: 0;
+        z-index: 5;
+        height: 80vh;
+        display: block;
+        position: fixed;
+        padding-top: .5em;
+        transition: 0.5s;
+        overflow-x: hidden;
+        background-color: rgba(04, 07, 08, 0.9)
+    }
+    #mobileNav .navLinks ul li {
+        text-align: center;
+        padding-bottom: 1.75em;
+    }
+    #mobileNav .navLinks ul li:first-child {
+        font-size: 2em;
+        padding-bottom: 0.15em;
+    }
+    #mobileNav .navLinks ul li a:hover {
+        padding-left: 0;
+    }
+
+    /* Projects */
+    .grid {
+        grid-gap: 0;
+        grid-template-columns: 1fr;
+    }
+    .grid .flexStyle {
+        margin-bottom: 3.75em;
+    }
+    .grid .zillow {
+        margin-bottom: 0;
+    }
+
+    /* About */
+    #about figure {
+        width: 55%;
+        margin-top: 1em;
+    }
+}

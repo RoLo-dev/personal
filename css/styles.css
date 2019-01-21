@@ -1,0 +1,258 @@
+/* colors
+soft black: #171717;
+light gray: #8B8B8B;
+dark gray: #4C4C4C;
+ */
+
+/* Universal Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Archivo', sans-serif;
+  background-color: rgb(04, 08, 07);
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  font-weight: 400;
+  color: #fff;
+  font-size: 18px;
+}
+.wrapper {
+  width: 95%;
+  margin: 0 auto;
+}
+.pic {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.titleSec {
+  color: #fff;
+  font-weight: 400;
+  font-size: 2.25em;
+  margin-top: 2.25em;
+  font-family: 'Archivo Black', sans-serif;
+}
+.h4Style {
+  border-bottom: 1px solid #8B8B8B;
+  font-size: 1.5em;
+  color: #8B8B8B;
+  padding: 0 .85em;
+}
+.secStyle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btnLink {
+  text-decoration: none;
+}
+.btn {
+  color: #fff;
+  font-size: .85em;
+  margin-top: 1.5em;
+  padding: 10px 3em;
+  text-decoration: none;
+  background-color: transparent;
+  border: solid 1px #fff;
+  border-radius: 0;
+  transition: border-radius 0.8s ease-out;
+}
+.btn:hover {
+  color: #8b8b8b;
+  cursor: pointer;
+  border-radius: 20px;
+  border-color: #8b8b8b;
+  transition: all .25s ease-in;
+}
+
+/* Left Column */
+#leftCol {
+  position: fixed;
+  width: 32%;
+  top: 35%;
+  left: 4%;
+}
+.navContent .logo {
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+.navLinks ul {
+  list-style: none;
+}
+.navLinks ul li {
+  margin-bottom: 10px;
+}
+.navLinks ul li:last-child {
+  margin-bottom: 0;
+}
+.navLinks ul li a {
+  text-decoration: none;
+  font-size: 1.75em;
+  font-weight: 700;
+  color: #fff;
+  padding: 0;
+  transition: padding-left 0.8s ease-out;
+}
+.navLinks ul li a:hover {
+  color: #8B8B8B;
+  padding-left: 12px;
+  transition: all .3s ease-in-out;
+}
+
+/* Right Column */
+#rightCol {
+  position: absolute;
+  padding-top: 34vh;
+  width: 60%;
+  top: 75vh;
+  right: 11%;
+  left: 39%;
+}
+
+/* Header */
+header {
+  top: 0;
+  z-index: 1;
+  height: 2em;
+  width: 61%;
+  position: fixed;
+  background: rgb(04, 07, 08);
+  border-bottom: 1.5px solid rgba(204, 204, 204, .3);
+}
+.scroll-line {
+  width: 0%;
+  height: 3px;
+  margin-top: .9em;
+  background: #8b8b8b
+}
+/* Mobile Nav */
+#mobileNav {
+  display: none;
+}
+
+/* Specialties */
+#mySpecialties {
+  margin-bottom: 1.5em;
+}
+.specialtiesWrap {
+  height: 18em;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+.specialtiesWrap .specContainer {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.specialtiesWrap .icon {
+  font-size: 4em;
+  color: #C78806;
+  padding-bottom: 12px;
+}
+.specialtiesWrap .specialTitle {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  font-family: 'Archivo Black', sans-serif;
+}
+.specialtiesWrap p {
+  text-align: center;
+  font-size: 1em;
+  width: 90%;
+}
+
+/* Projects */
+#websites {
+  margin-top: 1em;
+}
+.grid {
+  display: grid;
+  grid-gap: 1.75em;
+  margin-bottom: 3.5em;
+  grid-template-columns: 1fr 1fr;
+}
+.grid:last-child {
+  margin-bottom: 0;
+}
+.grid .flexStyle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.grid figure {
+  width: 70%;
+  margin-bottom: 15px;
+}
+.projectTitle {
+  font-weight: 700;
+  font-size: 1.25em;
+  margin-bottom: 10px;
+}
+.projDescrip {
+  width: 90%;
+  line-height: 1.32;
+  text-align: center;
+}
+.skills {
+  font-weight: 700;
+  margin-top: 10px;
+  color: #8b8b8b;
+}
+
+/* About */
+#about figure {
+  width: 40%;
+  margin-top: 2em;
+}
+#about p {
+  width: 70%;
+  line-height: 1.32;
+}
+.resumeTitle {
+  margin-top: 1em;
+}
+
+/* Contact */
+#contact {
+  text-align: center;
+  margin-bottom: 3em;
+}
+#contact .contactP {
+  margin-top: 2em;
+}
+.contactInfo {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contactInfo i {
+  font-size: 1.75em;
+  padding-right: .5em;
+}
+.contactInfo .cntctStyle {
+  margin-top: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactInfo .cntctLinks {
+  color: #fff;
+  text-decoration: none;
+}
+.contactInfo .cntctLinks:hover {
+  color: #8B8B8B;
+  transition: color 0.3s ease-in-out;
+} 
