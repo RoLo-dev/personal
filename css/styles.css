@@ -109,7 +109,7 @@ html {
 #rightCol {
   position: absolute;
   width: 60%;
-  top: 100vh;
+  top: 110vh;
   right: 11%;
   left: 39%;
 }
@@ -144,7 +144,7 @@ header {
   text-align: center;
   animation-name: arrow;
   animation-delay: 4s;
-  animation-duration: 5s;
+  animation-duration: 4s;
   animation-fill-mode: forwards;
 
   transition-property: transform;
@@ -154,11 +154,11 @@ header {
   transform: rotateY(180deg);
 }
 @keyframes arrow {
-  0% {top: -110vh; left: 46%; opacity: 1;}
+  0% {top: -115vh; left: 46%; opacity: 0;}
   25% {opacity: 0.1;}
-  50% {opacity: 1;}
-  75% {opacity: 0.1;}
-  100% {top: -10vh; left: 46%; opacity: 1;}
+  50% {opacity: 0.3;}
+  75% {opacity: 0.5;}
+  100% {top: -18vh; left: 46%; opacity: 1;}
 }
 .arrow a {
   font-size: 3em;
