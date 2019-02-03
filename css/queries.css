@@ -88,6 +88,9 @@
     #leftCol {
         display: none;
     }
+    #arrow {
+        display: none;
+    }
 
     /* Right Column */
     #rightCol {
