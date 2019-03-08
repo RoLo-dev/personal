@@ -84,7 +84,7 @@ function closeModal() {
   modal.style.visibility = 'hidden';
   modal.style.transition = '0.5s';
 }
-function oustsideModal(e) {
+function outsideModal(e) {
   if (e.target == modal) {
     modalCntnt.style.top = '100%';
     modal.style.opacity = '0';
