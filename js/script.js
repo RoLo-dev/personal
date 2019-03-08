@@ -28,35 +28,59 @@ function closeNav() {
 
 
 // This is for the scrollbar
-    $(window).scroll(function() {
-      var wintop = $(window).scrollTop(), docheight = 
+$(window).scroll(function() {
+  var wintop = $(window).scrollTop(), docheight = 
 
-      $(document).height(), winheight = $(window).height();
-      var scrolled = (wintop/(docheight - winheight))*100;
+  $(document).height(), winheight = $(window).height();
+  var scrolled = (wintop/(docheight - winheight))*100;
 
-      $('.scroll-line').css('width', (scrolled + '%'));
-    });
+  $('.scroll-line').css('width', (scrolled + '%'));
+});
 
 
 
-    // This code is for smooth scrolling effect
-    $(document).ready(function(){
-      // Add smooth scrolling to all links
-      $(".navLink").on('click', function(event) {
+// This code is for smooth scrolling effect
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $(".navLink").on('click', function(event) {
 
-        if (this.hash !== "b") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
+    if (this.hash !== "b") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-          // Store hash
-          var hash = this.hash;
+      // Store hash
+      var hash = this.hash;
 
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function(){
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
 
-            window.location.hash = hash;
-          });
-        } // End if
+        window.location.hash = hash;
       });
-    });
+    } // End if
+  });
+});
+
+
+
+// This is for the modal
+let modalBtn = document.getElementById('modalBtn');
+let modal = document.getElementById('modal');
+let modalCntnt = document.getElementById('modal-content');
+
+modalBtn.addEventListener('click', openModal);
+window.addEventListener('click', closeModal);
+
+function openModal() {
+  modalCntnt.style.top = '0';
+  modal.style.opacity = '0.94';
+  modal.style.visibility = 'visible';
+}
+function closeModal(e) {
+  if (e.target == modal) {
+    modalCntnt.style.top = '100%';
+    modal.style.opacity = '0';
+    modal.style.visibility = 'hidden';
+    modal.style.transition = '0.5s';
+  }
+}
