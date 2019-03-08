@@ -67,16 +67,24 @@ $(document).ready(function(){
 let modalBtn = document.getElementById('modalBtn');
 let modal = document.getElementById('modal');
 let modalCntnt = document.getElementById('modal-content');
+let closeBtn = document.getElementById('closeBtn');
 
+closeBtn.addEventListener('click', closeModal);
 modalBtn.addEventListener('click', openModal);
-window.addEventListener('click', closeModal);
+window.addEventListener('click', outsideModal);
 
 function openModal() {
   modalCntnt.style.top = '0';
   modal.style.opacity = '0.94';
   modal.style.visibility = 'visible';
 }
-function closeModal(e) {
+function closeModal() {
+  modalCntnt.style.top = '100%';
+  modal.style.opacity = '0';
+  modal.style.visibility = 'hidden';
+  modal.style.transition = '0.5s';
+}
+function oustsideModal(e) {
   if (e.target == modal) {
     modalCntnt.style.top = '100%';
     modal.style.opacity = '0';
