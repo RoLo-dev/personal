@@ -253,6 +253,12 @@ header {
 .resumeTitle {
   margin-top: 1em;
 }
+.or-Resume {
+  text-align: center;
+}
+#modalBtn {
+  margin-top: 0;
+}
 
 /* Contact */
 #contact {
