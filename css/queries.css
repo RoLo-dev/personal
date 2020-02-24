@@ -59,6 +59,9 @@
     }
 
     /* Contact */
+    #about figure {
+        width: 50%;
+    }
     .contactInfo {
         margin-top: 1.25em;
         flex-direction: column;

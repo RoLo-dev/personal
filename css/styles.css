@@ -243,8 +243,9 @@ header {
 
 /* About */
 #about figure {
-  width: 40%;
+  width: 30%;
   margin-top: 2em;
+  margin-bottom: 1rem;
 }
 #about p {
   width: 70%;
