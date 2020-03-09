@@ -38,38 +38,13 @@ p{
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 2rem;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-}
-.h4Style {
-  border-bottom: 1px solid #8B8B8B;
-  font-size: 1.5rem;
-  color: #8B8B8B;
-  padding: 0 .85rem;
+  margin-top: 4.5rem;
+  margin-bottom: 1.5rem;
 }
 .secStyle {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
-}
-.btn {
-  color: #1F262D;
-  font-size: .85rem;
-  padding: 6px 2.5rem;
-  text-decoration: none;
-  background-color: #fff;
-  border: solid 2px #fff;
-  border-radius: 20px;
-  transition: all 0.8s ease-out;
-}
-.btn:hover,
-.btn:focus {
-  color: #8b8b8b;
-  cursor: pointer;
-  background-color: transparent;
-  border-color: #8b8b8b;
-  transition: all 0.2s ease-in;
 }
 
 /* Left Column */
@@ -81,6 +56,8 @@ p{
   left: 0;
   background-color: #091119;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 .navContent{
@@ -241,12 +218,16 @@ header {
 .skills {
   color: #8b8b8b;
 }
-.projectLinks{
+.projectLinks,
+.resumeLinks{
   display: flex;
 }
 .projectLink{
   width: 30%;
-  padding: 5px 0 0 0;
+  padding: 4px 0 0 0;
+}
+.projectLink,
+.resumeLink{
   border: 2px solid #fff;
   background-color: #fff;
   color: #1F262D;
@@ -257,7 +238,9 @@ header {
   transition: all 0.7s ease-in;
 }
 .projectLink:hover,
-.projectLink:focus{
+.projectLink:focus,
+.resumeLink:hover,
+.resumeLink:focus{
   background-color: transparent;
   color: #8b8b8b;
   border-color: #8b8b8b;
@@ -265,16 +248,45 @@ header {
 }
 
 /* About */
-#about figure {
+.flexContainer{
+  display: flex;
+  justify-content: space-between;
+}
+.flexContainer div{
+  width: 68%;
+}
+.flexContainer figure {
   width: 30%;
-  margin-top: 2em;
-  margin-bottom: 1rem;
+  background-color: rgb(240, 239, 239);
+  padding: 12px 12px 1.5rem 12px;
 }
 .resumeTitle {
-  margin-top: 1em;
+  margin-top: 1.75rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
 }
-.or-Resume {
-  text-align: center;
+.resumeLinks .resumeLink{
+  width: 18%;
+  padding: 7px 0 0 0;
+}
+.btn {
+  color: #1F262D;
+  font-size: .85rem;
+  font-family: 'Spartan', sans-serif;
+  padding: 7px 3rem;
+  text-decoration: none;
+  background-color: #fff;
+  border: solid 2px #fff;
+  border-radius: 20px;
+  transition: all 0.8s ease-out;
+}
+.btn:hover,
+.btn:focus {
+  color: #8b8b8b;
+  cursor: pointer;
+  background-color: transparent;
+  border-color: #8b8b8b;
+  transition: all 0.2s ease-in;
 }
 #modalBtn {
   margin-top: 0;
@@ -320,30 +332,105 @@ header {
 
 
 /* Contact */
-#contact .contactP {
-  margin-top: 2em;
+#contact{
+  margin-bottom: 5rem;
 }
-.contactInfo {
-  width: 90%;
+.form-content{
+  margin-top: 1.25rem;
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
-.contactInfo i {
-  font-size: 1.75em;
-  padding-right: .5em;
+form{
+  width: 48%;
+  display: flex;
+  flex-direction: column;
 }
-.contactInfo .cntctStyle {
-  margin-top: 2em;
+form>*{
+    margin-bottom: 1rem;
+}
+form input{
+    height: 2rem;
+    font-size: 0.9rem;
+    font-family: 'Spartan', sans-serif;
+    border: 0;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    padding: 5px 0 0 5px;
+    background-color: transparent;
+    transition: all 0.7s;
+}
+form textarea{
+    height: 7rem;
+    color: #fff;
+    font-size: 0.9rem;
+    font-family: 'Spartan', sans-serif;
+    border: 2px solid #fff;
+    padding: 5px 0 0 5px;
+    background-color: transparent;
+    transition: all 0.7s;
+}
+form input:hover,
+form textarea:hover{
+    border-color: #a7a8a9;
+    color: #a7a8a9;
+    transition: all 0.3s;
+}
+form input:focus,
+form textarea:focus{
+    border-color: #fff;
+    color: #fff;
+    transition: all 0.3s;
+}
+form input:hover::placeholder,
+form textarea:hover::placeholder{
+    color: #a7a8a9;
+    transition: all 0.3s;
+}
+form input::placeholder,
+form textarea::placeholder{
+    color: #fff;
+    transition: all 0.7s;
+}
+.submit-btn{
+    width: 40%;
+    outline: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: #272B35;
+    letter-spacing: 0.85px;
+    transition: all 0.7s;
+}
+.submit-btn:hover{
+    color: #a7a8a9;
+    border-color: #636569;
+    background-color: transparent;
+    transition: all 0.3s;
+}
+
+.contactInfo,
+.contactLinks{
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.contactInfo .cntctLinks {
-  color: #fff;
-  text-decoration: none;
+.contactLinks{
+  margin-bottom: 1rem;
 }
-.contactInfo .cntctLinks:hover {
-  color: #8B8B8B;
-  
-} 
+.contactInfo{
+  margin-top: 2rem;
+  display: none;
+}
+.contactInfo i,
+.contactLinks i{
+  font-size: 2.25rem;
+  margin: 0 1rem;
+  color: #fff;
+  transition: color 0.5s ease-out;
+}
+.contactInfo i:hover,
+.contactLinks i:hover{
+  color: #1F262D;
+  transition: color 0.3s ease-in;
+}
