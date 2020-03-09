@@ -22,7 +22,8 @@
 <body>
 
   <section id="leftCol">
-    <div class="wrapper navContent">
+    <span></span>
+    <div class="navContent">
       <div class="logo">
         <figure>
           <img src="imgs/RL_logo2018.svg" alt="logo">
@@ -35,6 +36,26 @@
           <li><a href="#contact" class="navLink">Contact</a></li>
         </ul>
       </div>
+    </div>
+
+    <div class="contactLinks">
+
+      <div class="cntctStyle">
+        <a href="https://github.com/RoLo-dev" target="_blank" class="cntctLinks">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="cntctStyle">
+        <a href="https://github.com/RoLo-dev" target="_blank" class="cntctLinks">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+      <div class="cntctStyle">
+        <a href='mailto:rlopantzi@gmail.com' target="_blank" class="cntctLinks">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+
     </div>
   </section>
 
@@ -149,21 +170,24 @@
       <section id="about" class="secStyle">
         <h2 class="titleSec">About Me</h2>
 
-        <figure>
-          <img src="imgs/selfie.jpg" alt="selfie pic" class="pic">
-        </figure>
-        <p>My name is Rolando Lopantzi, I am currently working towards being front-end developer. My mission is to build immersive and beautiful web applications through carefully crafted code and user-centric design. I grew up and currently live in Southern California, Orange County area to be more precise.</p>
-        <br>
-        <p>My design journey started with me starting my career as a graphic designer, from there it was where I came across tasks in designing web layouts for potential website builds. I enjoyed the process of designing the look of what a website can look like but was not sure on how to make design become a live functioning site. I then took a few courses to learn to code and the struggle was real, at least for me it was. Lots of hours watching tutorials and trying to build an application. There were a lot of moments trying to figure out why something wasn't working and it was in those moments where I began to think about attending a school in order to be a self-sufficient developer.</p>
-        <br>
-        <p>That's when I looked into joining a coding bootcamp to help me excel in my new coding journey that I am now pursuing. I decided to attend at the Coding Dojo of OC and currently still in the program. Definitely not easy, it's a really fast pace and challenging program but I'm still going strong.</p>
+        <div class="flexContainer">
+          <div>
+            <p>My name is Rolando Lopantzi, I am currently working towards being front-end developer. My mission is to build immersive and beautiful web applications through carefully crafted code and user-centric design. I grew up and currently live in Southern California, Orange County area to be more precise.</p>
+            <br>
+            <p>My design journey started with me starting my career as a graphic designer, from there it was where I came across tasks in designing web layouts for potential website builds. I enjoyed the process of designing the look of what a website can look like but was not sure on how to make design become a live functioning site. I then took a few courses to learn to code and the struggle was real, at least for me it was. Lots of hours watching tutorials and trying to build an application. There were a lot of moments trying to figure out why something wasn't working and it was in those moments where I began to think about attending a school in order to be a self-sufficient developer.</p>
+            <br>
+            <p>That's when I looked into joining a coding bootcamp to help me excel in my new coding journey that I am now pursuing. I decided to attend at the Coding Dojo of OC and currently still in the program. Definitely not easy, it's a really fast pace and challenging program but I'm still going strong.</p>
+          </div>
+          <figure>
+            <img src="imgs/selfie.jpg" alt="selfie pic" class="pic">
+          </figure>
+        </div>
 
-        <h4 class="resumeTitle h4Style">Resume</h4>
-        <a href="files/rLopantzi-web-resume.pdf" class="resume btnLink" download=""><button class="btn">Save my resume</button></a>
-        <br>
-        <p class="or-Resume">OR</p>
-        <br>
-        <button id="modalBtn" class="btn">View resume</button>
+        <h4 class="resumeTitle">Resume</h4>
+          <div class="resumeLinks">
+          <a href="files/rLopantzi-web-resume.pdf" class="resumeLink" download="">Save Resume</a>
+          <button id="modalBtn" class="btn">View Resume</button>
+        </div>
         <div id="modal">
           <div id="modal-content">
             <div id="resume">
@@ -178,16 +202,39 @@
       <section id="contact" class="secStyle">
 
         <h2 class="titleSec">Contact</h2>
-        <p class="contactP">I'm currently available for freelance work. If you have any project that you want to get started, think you may need my help with something or just fancy saying hey, then get in touch.</p>
+        <p class="contactP">Open for opportunities, available for collaborations and suggestions. Or just fancy saying hello, then get in touch.</p>
+
+        <div class="form-content">
+          <form action="https://formspree.io/mjvynjvj" method="POST">
+            <input type="text" name="name" placeholder="Full name">
+            <input type="email" name="reply_to" placeholder="Email">
+            <textarea name="message" placeholder="Message"></textarea>
+            <input type="submit" class="submit-btn" value="Send">
+          </form>
+          <div class="other-info">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425170.60728773643!2d-118.04962419637081!3d33.640435999706156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc925c54d5f7cf%3A0xdea6c3618ff0d607!2sOrange%20County%2C%20CA!5e0!3m2!1sen!2sus!4v1580091708028!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+        </div>
+
+
         <div class="contactInfo">
-          <div class="cntctStyle git">
-            <i class="fab fa-github"></i>
-            <a href="https://github.com/RoLo-dev" class="cntctLinks"><p>RoLo-dev</p></a>
+
+          <div class="cntctStyle">
+            <a href="https://github.com/RoLo-dev" target="_blank" class="cntctLinks">
+              <i class="fab fa-github"></i>
+            </a>
           </div>
-          <div class="cntctStyle email">
-            <i class="fas fa-envelope"></i>
-            <a href='mailto:rlopantzi@gmail.com' class="cntctLinks"><p>rlopantzi@gmail.com</p></a>
+          <div class="cntctStyle">
+            <a href="https://github.com/RoLo-dev" target="_blank" class="cntctLinks">
+              <i class="fab fa-linkedin"></i>
+            </a>
           </div>
+          <div class="cntctStyle">
+            <a href='mailto:rlopantzi@gmail.com' target="_blank" class="cntctLinks">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+
         </div>
 
       </section>
