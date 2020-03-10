@@ -103,3 +103,8 @@ function outsideModal(e) {
     modal.style.transition = '0.5s';
   }
 }
+
+AOS.init({
+    offset: 300,
+    duration: 850
+});
