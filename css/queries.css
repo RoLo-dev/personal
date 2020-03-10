@@ -201,6 +201,19 @@
         width: 8%;
     }
 
+    .mobileBanner{
+        visibility: visible;
+        height: 15rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .specialtiesWrap .icon{
+        font-size: 3.25rem;
+    }
+
     /* About */
     .flexContainer figure {
         width: 40%;

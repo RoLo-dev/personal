@@ -64,6 +64,9 @@ p{
 #empty_span{
   display: none;
 }
+.mobileBanner{
+  visibility: hidden;
+}
 .navContent{
   width: 80%;
 }
