@@ -1,30 +1,41 @@
 // This is for the mobile nav
-let mobileOnly = window.matchMedia('(max-width: 680px)');
-let open = document.getElementById('open');
-let close = document.getElementById('close');
+let mobileOnly = window.matchMedia('(max-width: 800px)');
+const open = document.getElementById('open');
+const close = document.getElementById('close');
+const leftCol = document.getElementById('leftCol');
 
-mobileOnly.addListener(screenSize);
-open.addEventListener('click', openNav);
-close.addEventListener('click', closeNav);
+// mobileOnly.addListener(screenSize);
+// open.addEventListener('click', openNav);
+// close.addEventListener('click', closeNav);
 
-function screenSize() {
-  if (mobileOnly.matches) {
-    openNav();
-    closeNav();
-  } else {
-    open.style.display = 'none';
-  }
-};
+open.addEventListener('click', add);
+close.addEventListener('click', exit);
 
-function openNav() {
-  document.getElementById('open').style.display = 'none';
-  document.getElementById('nav').style.width = '100%';
-};
+function add(){
+  leftCol.classList.add('show');
+}
+function exit(){
+  leftCol.classList.remove('show');
+}
 
-function closeNav() {
-  document.getElementById('nav').style.width = '0';
-  document.getElementById('open').style.display = 'block';
-};
+// function screenSize() {
+//   if (mobileOnly.matches) {
+//     openNav();
+//     closeNav();
+//   } else {
+//     open.style.display = 'none';
+//   }
+// };
+
+// function openNav() {
+//   document.getElementById('open').style.display = 'none';
+//   document.getElementById('nav').style.width = '100%';
+// };
+
+// function closeNav() {
+//   document.getElementById('nav').style.width = '0';
+//   document.getElementById('open').style.display = 'block';
+// };
 
 
 // This is for the scrollbar
