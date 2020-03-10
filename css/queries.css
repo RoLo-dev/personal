@@ -209,6 +209,9 @@
         justify-content: center;
         margin-bottom: 0.5rem;
     }
+    .mobileBanner div{
+        width: 60%;
+    }
 
     .specialtiesWrap .icon{
         font-size: 3.25rem;
