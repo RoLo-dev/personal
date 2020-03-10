@@ -101,6 +101,14 @@
         margin-bottom: 0;
     }
 
+    @keyframes arrow {
+        0% {top: -115vh; left: 46%; opacity: 0;}
+        25% {opacity: 0;}
+        50% {opacity: 0;}
+        75% {opacity: 0.3;}
+        100% {top: -28vh; left: 46%; opacity: 1;}
+    }
+
     /* Projects */
     .grid {
         grid-gap: 3rem;
@@ -173,7 +181,7 @@
         align-items: center;
     }
     #mobileNav #open{
-        font-size: 2rem;
+        font-size: 2.5rem;
         transition: 0.5s ease-out;
         color: #fff;
         display: block;
@@ -191,6 +199,10 @@
     }
 
     /* About */
+    .flexContainer figure {
+        width: 40%;
+        padding: 12px 12px 1.5rem 12px;
+    }
     #modal-content {
         width: 95%;
     }
