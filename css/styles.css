@@ -1,6 +1,4 @@
-
 /* Universal Styles */
-
 * {
   margin: 0;
   padding: 0;
@@ -116,7 +114,7 @@ header {
 
 /* Mobile Nav */
 #mobileNav {
-  display: none;
+  visibility: hidden;
 }
 
 /* Arrow to display more */
@@ -191,12 +189,9 @@ header {
 }
 .grid {
   display: grid;
-  grid-gap: 1.75rem;
+  grid-gap: 1rem;
   margin-bottom: 3.5rem;
   grid-template-columns: 1fr 1fr;
-}
-.grid:last-child {
-  margin-bottom: 0;
 }
 .grid .flexStyle > *{
   margin-bottom: 10px;
@@ -223,7 +218,7 @@ header {
   display: flex;
 }
 .projectLink{
-  width: 30%;
+  width: 185px;
   padding: 4px 0 0 0;
 }
 .projectLink,
@@ -258,7 +253,7 @@ header {
 .flexContainer figure {
   width: 30%;
   background-color: rgb(240, 239, 239);
-  padding: 12px 12px 1.5rem 12px;
+  padding: 12px 12px 1.85rem 12px;
 }
 .resumeTitle {
   margin-top: 1.75rem;
@@ -266,14 +261,15 @@ header {
   font-size: 1.25rem;
 }
 .resumeLinks .resumeLink{
-  width: 18%;
+  width: 185px;
   padding: 7px 0 0 0;
 }
 .btn {
+  width: 200px;
   color: #1F262D;
   font-size: .85rem;
   font-family: 'Spartan', sans-serif;
-  padding: 7px 3rem;
+  padding: 7px 0;
   text-decoration: none;
   background-color: #fff;
   border: solid 2px #fff;
@@ -392,7 +388,8 @@ form textarea::placeholder{
     transition: all 0.7s;
 }
 .submit-btn{
-    width: 40%;
+    width: 185px;
+    height: 1.85rem;
     outline: 0;
     border-radius: 20px;
     cursor: pointer;
@@ -408,6 +405,10 @@ form textarea::placeholder{
     background-color: transparent;
     transition: all 0.3s;
 }
+.other-info iframe{
+  width: 500px;
+  height: 400px;
+}
 
 .contactInfo,
 .contactLinks{
@@ -420,7 +421,7 @@ form textarea::placeholder{
 }
 .contactInfo{
   margin-top: 2rem;
-  display: none;
+  visibility: hidden;
 }
 .contactInfo i,
 .contactLinks i{

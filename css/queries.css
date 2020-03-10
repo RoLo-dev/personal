@@ -1,3 +1,42 @@
+@media only screen and (max-width: 1600px){
+    .flexContainer div{
+        width: 55%;
+    }
+    .flexContainer figure{
+        width: 40%;
+    }
+
+    .other-info iframe{
+        width: 400px;
+    }
+}
+
+
+@media only screen and (max-width: 1400px){
+    .projectLink{
+        width: 150px;
+    }
+
+    .flexContainer div{
+        width: 50%;
+    }
+    .flexContainer figure{
+        width: 48%;
+    }
+}
+
+
+@media only screen and (max-width: 1350px){
+    .other-info iframe{
+        width: 350px;
+    }
+    .flexContainer figure{
+        width: 48%;
+        height: 90%;
+    }
+}
+
+
 @media only screen and (max-width: 1200px) {
     /* Universal Styles */
     html {
@@ -6,33 +45,45 @@
 
     /* Specialties */
     .specialtiesWrap .specialTitle {
-        font-size: 1.2em;
+        font-size: 1.15em;
+    }
+    .specialtiesWrap p{
+        font-size: 0.9rem;
+    }
+
+    .grid figure,
+    .projDescrip{
+        width: 100%;
+    }
+
+    /* About */
+    .flexContainer{
+        flex-direction: column;
+    }
+    .flexContainer figure{
+        align-self: center;
+        margin-bottom: 1.25rem;
+    }
+    .flexContainer div{
+        width: 100%;
+    }
+
+    /* Contact */
+    .form-content{
+        flex-direction: column;
+    }
+    form{
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    .other-info iframe{
+        width: 100%;
+        height: 500px;
     }
 }
 
 
-
-
-
-@media only screen and (max-width: 925px) {
-    /* Universal Styles */
-    .h4Style {
-        margin-bottom: 1.5em;
-    }
-
-    /* Left Column */
-    #leftCol {
-        top: 40%;
-        left: 3%;
-        width: 30%;
-    }
-
-    /* Right Column */
-    #rightCol {
-        left: 35%;
-        right: 1%;
-        width: 64%;
-    }
+@media only screen and (max-width: 1075px) {
 
     /* Specialties */
     #mySpecialties {
@@ -52,125 +103,101 @@
 
     /* Projects */
     .grid {
-        grid-gap: 1em;
-    }
-    .grid div {
-        margin-bottom: 2em;
+        grid-gap: 3rem;
+        grid-template-columns: 1fr;
     }
 
     /* Contact */
     #about figure {
         width: 50%;
     }
-    .contactInfo {
-        margin-top: 1.25em;
-        flex-direction: column;
-    }
-    .contactInfo .email,
-    .contactInfo .phone {
-        margin-top: 0.5em;
-    }
 }
 
 
-
-
-
-@media only screen and (max-width: 700px) {
-    /* Universal Styles */
-    .btn{
-        padding: 12px 5em;
-    }
-    .btn:active {
-        color: #fff;
-        background-color: #4c4c4c;
-        transition: color .3s ease-in-out,
-        background-color .3s ease-in-out;
-    }
-    /* Left Column */
-    #leftCol {
-        display: none;
-    }
+@media only screen and (max-width: 800px) {
     #arrow {
         display: none;
-    }
-
-    /* Right Column */
-    #rightCol {
-        width: 100%;
-        padding-top: 0;
-        position: inherit;  
-    }
-
-    /* Header */
-    header {
-        width: 100%;
-        height: auto;
-        border-bottom: 0;
-        position: inherit;
     }
     #scrollLine {
         display: none;
     }
-    #mobileNav {
-        display: block;
-        padding: 1em 0 4em 0;
+
+    /* Left Column */
+    #leftCol{
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 450px;
+        transform: translateX(-450px);
+        min-height: 100vh;
+        transition: transform 0.4s ease-out;
     }
-    #mobileNav .navContent {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+    #leftCol.show{
+        transform: translateX(0);
+        transition: transform 0.2s ease-in;
     }
-    #mobileNav .navContent .logo {
-        width: 70%;
+    #close{
+        font-size: 2.5rem;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        transform: rotate(0);
+        transition: all 0.4s;
     }
-    #mobileNav .open {
-        color: #fff;
-        display: block;
-        font-size: 3em;
+    #close:hover{
+        transform: rotate(-180deg);
+        top: 14px;
         cursor: pointer;
+        transition: all 0.3s;
     }
-    #mobileNav .navLinks {
-        width: 0;
-        z-index: 5;
-        height: 80vh;
-        display: block;
-        position: fixed;
-        padding-top: .5em;
-        transition: 0.5s;
-        overflow-x: hidden;
-        background-color: rgba(04, 07, 08, 0.9)
-    }
-    #mobileNav .navLinks ul li {
-        text-align: center;
-        padding-bottom: 1.75em;
-    }
-    #mobileNav .navLinks ul li:first-child {
-        font-size: 2em;
-        padding-bottom: 0.15em;
-    }
-    #mobileNav .navLinks ul li a:hover {
-        padding-left: 0;
+    /* Right Column */
+    #rightCol {
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
     }
 
-    /* Projects */
-    .grid {
-        grid-gap: 0;
-        grid-template-columns: 1fr;
+    header{
+        height: auto;
+        position: relative;
+        width: 100%;
+        padding: 12px 0;
     }
-    .grid .flexStyle {
-        margin-bottom: 3.75em;
+    #mobileNav{
+        visibility: visible;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
-    .grid .zillow {
-        margin-bottom: 0;
+    #mobileNav #open{
+        font-size: 2rem;
+        transition: 0.5s ease-out;
+        color: #fff;
+        display: block;
+        cursor: pointer;
+    }
+    #mobileNav #open:hover{
+        color: #8B8B8B;
+        transition: color 0.3s ease-in;
+    }
+    #mobileNav #open:active{
+        transform: scale(0.97);
+    }
+    #mobileNav .logo{
+        width: 8%;
     }
 
     /* About */
-    #about figure {
-        width: 55%;
-        margin-top: 1em;
-    }
     #modal-content {
         width: 95%;
+    }
+
+    .other-info iframe{
+        height: 300px;
+    }
+    .contactInfo{
+        visibility: visible;
     }
 }
