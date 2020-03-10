@@ -61,6 +61,9 @@ p{
 #close{
   visibility: hidden;
 }
+#empty_span{
+  display: none;
+}
 .navContent{
   width: 80%;
 }
@@ -420,7 +423,7 @@ form textarea::placeholder{
   justify-content: center;
 }
 .contactLinks{
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 .contactInfo{
   margin-top: 2rem;

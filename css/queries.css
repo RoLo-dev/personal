@@ -141,6 +141,9 @@
         min-height: 100vh;
         transition: transform 0.4s ease-out;
     }
+    #empty_span{
+        display: block;
+    }
     #leftCol.show{
         transform: translateX(0);
         transition: transform 0.2s ease-in;
