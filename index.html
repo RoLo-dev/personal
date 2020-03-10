@@ -10,6 +10,7 @@
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="stylesheet" type="text/css" href="css/queries.css">
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Spartan:wght@300;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <script src="https://kit.fontawesome.com/f732920d38.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -23,11 +24,13 @@
 
   <section id="leftCol" class="leftCol">
     <span id="close">&times;</span>
-    <span></span>
+    <span id="empty_span"></span>
     <div class="navContent">
       <div class="logo">
         <figure>
-          <img src="imgs/RL_logo2018.svg" alt="logo">
+          <a href="http://rolandolopantzi.com/">
+            <img src="imgs/RL_logo2018.svg" alt="logo">
+          </a>
         </figure>
       </div>
       <div class="navLinks">
@@ -70,7 +73,9 @@
       <div id="mobileNav" class="wrapper">
 
         <div class="logo">
+          <a href="http://rolandolopantzi.com/">
             <img src="imgs/RL_favicon-2018.png" class="pic" alt="logo">
+          </a>
         </div>
         <span id="open" class="open">&#9776</span>
 
@@ -224,6 +229,7 @@
   </section>  <!-- This wraps around the rightCol -->
 
   <script type="text/javascript" src="js/script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </body>
 </html>
 
