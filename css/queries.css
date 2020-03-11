@@ -51,11 +51,6 @@
         font-size: 0.9rem;
     }
 
-    .grid figure,
-    .projDescrip{
-        width: 100%;
-    }
-
     /* About */
     .flexContainer{
         flex-direction: column;
@@ -111,7 +106,7 @@
 
     /* Projects */
     .grid {
-        grid-gap: 3rem;
+        /* grid-gap: 3rem; */
         grid-template-columns: 1fr;
     }
 
@@ -215,6 +210,10 @@
 
     .specialtiesWrap .icon{
         font-size: 3.25rem;
+    }
+
+    .projectTitle{
+        font-size: 1.1rem;
     }
 
     /* About */
