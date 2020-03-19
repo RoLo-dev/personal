@@ -64,7 +64,7 @@ $(document).ready(function(){
 
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 800, function(){
+      }, 300, function(){
 
         window.location.hash = hash;
       });
@@ -102,6 +102,17 @@ function outsideModal(e) {
     modal.style.visibility = 'hidden';
     modal.style.transition = '0.5s';
   }
+}
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
+    document.getElementById("mobile-menu").style.visibility = "visible";
+  }
+  // else {
+  //   document.getElementById("mobile-menu").style.visibility = "hidden";
+  // }
 }
 
 AOS.init({
