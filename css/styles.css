@@ -128,6 +128,9 @@ header {
 #mobileNav {
   visibility: hidden;
 }
+#mobile-menu{
+  visibility: hidden;
+}
 
 /* Arrow to display more */
 .arrow {
@@ -353,6 +356,7 @@ header {
 
 /* Contact */
 #contact{
+  margin-top: 1rem;
   margin-bottom: 5rem;
 }
 .form-content{
