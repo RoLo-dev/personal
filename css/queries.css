@@ -11,6 +11,11 @@
     }
 }
 
+@media only screen and (max-width: 1800px){
+    #arrow{
+        width: 150px;
+    }
+}
 
 @media only screen and (max-width: 1400px){
     .projectLink{
@@ -124,6 +129,9 @@
     #scrollLine {
         display: none;
     }
+    ::-webkit-scrollbar{
+        visibility: visible;
+    }
 
     /* Left Column */
     #leftCol{
@@ -202,12 +210,21 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-top: 1.5rem;
         margin-bottom: 0.5rem;
     }
     .mobileBanner div{
+        margin: 0 auto;
         width: 68%;
+        font-size: 1.85rem;
+    }
+    .mobileBanner div h1{
+        margin-bottom: 1rem;
     }
 
+    #mySpecialties{
+        padding-top: 2.5rem;
+    }
     .specialtiesWrap .icon{
         font-size: 3.25rem;
     }

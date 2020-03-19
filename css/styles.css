@@ -13,6 +13,9 @@ html {
   color: #fff;
   font-size: 18px;
 }
+::-webkit-scrollbar{
+  display: none;
+}
 a {
   text-decoration: none;
 }
@@ -118,7 +121,7 @@ header {
   height: 4px;
   margin-top: 0.9rem;
   border-radius: 15px;
-  background: #091119;
+  background: #8B8B8B;
 }
 
 /* Mobile Nav */
@@ -160,7 +163,7 @@ header {
 
 /* Specialties */
 #mySpecialties {
-  padding-top: 2.1rem;
+  padding-top: 9rem;
   color: #fff;
   margin-bottom: 4rem;
 }
