@@ -130,6 +130,7 @@ header {
 }
 #mobile-menu{
   visibility: hidden;
+  display: none;
 }
 
 /* Arrow to display more */
@@ -199,17 +200,11 @@ header {
 }
 
 /* Projects */
-#websites {
-  margin-top: 1em;
-}
 .grid {
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: 1fr 1fr;
 }
-/* .grid .flexStyle > *{
-  margin-bottom: 12px;
-} */
 .grid .flexStyle {
   display: flex;
   flex-direction: column;
@@ -267,9 +262,6 @@ header {
 }
 
 /* About */
-#about h2{
-  margin-top: 3rem;
-}
 .flexContainer{
   display: flex;
   justify-content: space-between;
@@ -356,7 +348,7 @@ header {
 
 /* Contact */
 #contact{
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   margin-bottom: 5rem;
 }
 .form-content{
