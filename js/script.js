@@ -53,7 +53,7 @@ $(window).scroll(function() {
 // This code is for smooth scrolling effect
 $(document).ready(function(){
   // Add smooth scrolling to all links
-  $(".navLink").on('click', function(event) {
+  $("a").on('click', function(event) {
 
     if (this.hash !== "b") {
       // Prevent default anchor click behavior
