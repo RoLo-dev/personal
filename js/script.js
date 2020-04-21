@@ -3,13 +3,14 @@ let mobileOnly = window.matchMedia('(max-width: 700px)');
 const open = document.getElementById('open');
 const close = document.getElementById('close');
 const leftCol = document.getElementById('leftCol');
+const specialties = document.getElementById('mySpecialties');
 
 open.addEventListener('click', add);
 close.addEventListener('click', exit);
 
 function removeFade(){
   if(mobileOnly.matches){
-    document.getElementById('mobile-menu').setAttribute("data-aos", "zoom-in");
+    specialties.setAttribute("data-aos", "");
   }
 }
 removeFade();
