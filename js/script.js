@@ -1,15 +1,20 @@
 // This is for the mobile nav
-let mobileOnly = window.matchMedia('(max-width: 800px)');
+let mobileOnly = window.matchMedia('(max-width: 700px)');
 const open = document.getElementById('open');
 const close = document.getElementById('close');
 const leftCol = document.getElementById('leftCol');
-
-// mobileOnly.addListener(screenSize);
-// open.addEventListener('click', openNav);
-// close.addEventListener('click', closeNav);
+const mobileMenu =  document.getElementById('mobile-menu');
 
 open.addEventListener('click', add);
 close.addEventListener('click', exit);
+
+function removeFade(){
+  if(mobileOnly.matches){
+    console.log('working');
+    mobileMenu.setAttribute('data-aos', 'none');
+  }
+}
+removeFade();
 
 function add(){
   leftCol.classList.add('show');
@@ -17,26 +22,6 @@ function add(){
 function exit(){
   leftCol.classList.remove('show');
 }
-
-// function screenSize() {
-//   if (mobileOnly.matches) {
-//     openNav();
-//     closeNav();
-//   } else {
-//     open.style.display = 'none';
-//   }
-// };
-
-// function openNav() {
-//   document.getElementById('open').style.display = 'none';
-//   document.getElementById('nav').style.width = '100%';
-// };
-
-// function closeNav() {
-//   document.getElementById('nav').style.width = '0';
-//   document.getElementById('open').style.display = 'block';
-// };
-
 
 // This is for the scrollbar
 $(window).scroll(function() {
@@ -47,8 +32,6 @@ $(window).scroll(function() {
 
   $('.scroll-line').css('width', (scrolled + '%'));
 });
-
-
 
 // This code is for smooth scrolling effect
 $(document).ready(function(){
@@ -71,8 +54,6 @@ $(document).ready(function(){
     } // End if
   });
 });
-
-
 
 // This is for the modal
 let modalBtn = document.getElementById('modalBtn');
@@ -104,15 +85,13 @@ function outsideModal(e) {
   }
 }
 
+// This is for the mobile menu that pops up when you scroll down
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
-    document.getElementById("mobile-menu").style.visibility = "visible";
+    mobileMenu.style.visibility = "visible";
   }
-  // else {
-  //   document.getElementById("mobile-menu").style.visibility = "hidden";
-  // }
 }
 
 AOS.init({
