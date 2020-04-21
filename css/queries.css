@@ -239,7 +239,6 @@
     /* About */
     .flexContainer figure {
         width: 40%;
-        padding: 12px 12px 1.5rem 12px;
     }
     #modal-content {
         width: 95%;
@@ -280,11 +279,14 @@
     }
     .menu-content .menu-items a{
         width: auto;
+        color: #fff;
     }
     .menu-content .menu-items a i{
-        font-size: 2rem;
+        font-size: 1.85rem;
         margin-bottom: 5px;
         padding-left: 12px;
-        color: #fff;
+    }
+    .menu-content .menu-items a p{
+        font-size: 0.9rem;
     }
 }

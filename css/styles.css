@@ -272,7 +272,7 @@ header {
 .flexContainer figure {
   width: 30%;
   background-color: rgb(240, 239, 239);
-  padding: 12px 12px 1.85rem 12px;
+  /* padding: 12px 12px 1.85rem 12px; */
 }
 .resumeTitle {
   margin-top: 1.75rem;
