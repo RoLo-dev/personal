@@ -3,15 +3,13 @@ let mobileOnly = window.matchMedia('(max-width: 700px)');
 const open = document.getElementById('open');
 const close = document.getElementById('close');
 const leftCol = document.getElementById('leftCol');
-const mobileMenu =  document.getElementById('mobile-menu');
 
 open.addEventListener('click', add);
 close.addEventListener('click', exit);
 
 function removeFade(){
   if(mobileOnly.matches){
-    console.log('working');
-    mobileMenu.setAttribute('data-aos', 'none');
+    document.getElementById('mobile-menu').setAttribute("data-aos", "zoom-in");
   }
 }
 removeFade();
@@ -87,6 +85,7 @@ function outsideModal(e) {
 
 // This is for the mobile menu that pops up when you scroll down
 window.onscroll = function() {scrollFunction()};
+const mobileMenu =  document.getElementById('mobile-menu');
 
 function scrollFunction() {
   if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
