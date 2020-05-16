@@ -71,7 +71,7 @@ p{
   width: 80%;
 }
 .navContent .logo {
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
 }
 .navLinks ul {
   list-style: none;
@@ -165,7 +165,6 @@ header {
 /* Specialties */
 #mySpecialties {
   padding-top: 9rem;
-  /* color: #fff; */
   margin-bottom: 4rem;
 }
 .specialtiesWrap {
@@ -225,7 +224,6 @@ header {
   font-size: 1.15rem;
 }
 .skills {
-  /* color: rgba(0, 0, 0, 0.85); */
   color: orangered;
 }
 .projectLinks{
