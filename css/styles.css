@@ -25,6 +25,9 @@ p{
   line-height: 25px;
   font-size: 0.9rem;
 }
+ul li{
+  list-style: none;
+}
 .wrapper {
   width: 90%;
   margin: 0 auto;
