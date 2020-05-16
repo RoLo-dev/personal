@@ -106,7 +106,7 @@
         25% {opacity: 0;}
         50% {opacity: 0;}
         75% {opacity: 0.3;}
-        100% {top: -34vh; left: 46%; opacity: 1;}
+        100% {top: -27vh; left: 46%; opacity: 1;}
     }
 
     /* Projects */
@@ -296,6 +296,6 @@
 }
 @media only screen and (max-width: 600px){
     .mobileBanner{
-        height: 30rem;
+        height: 25rem;
     }
 }
