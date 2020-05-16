@@ -155,6 +155,7 @@
         visibility: visible;
         font-size: 2.5rem;
         position: absolute;
+        color: #fff;
         top: 20px;
         right: 20px;
         transform: rotate(0);
@@ -188,13 +189,13 @@
     }
     #mobileNav #open{
         font-size: 2.5rem;
-        transition: 0.5s ease-out;
-        color: #fff;
+        color: #000;
         display: block;
-        cursor: pointer;
+        transition: all 0.5s ease-out;
     }
     #mobileNav #open:hover{
         color: #8B8B8B;
+        cursor: pointer;
         transition: color 0.3s ease-in;
     }
     #mobileNav #open:active{
@@ -255,10 +256,9 @@
 
 @media only screen and (max-width: 700px){
     #mobile-menu{
-        /* visibility: visible; */
         width: 100%;
         height: 80px;
-        background-color: #091119;
+        background-color: #000;
         position: fixed;
         bottom: 0;
         left: 0;
@@ -288,5 +288,9 @@
     }
     .menu-content .menu-items a p{
         font-size: 0.85rem;
+    }
+
+    .resumeLinks .resumeLink{
+        padding: 7px 20px;
     }
 }

@@ -9,7 +9,8 @@
 
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="stylesheet" type="text/css" href="css/queries.css">
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Spartan:wght@300;700&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Spartan:wght@300;700&display=swap" rel="stylesheet"> -->
+   <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;700;900&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <script src="https://kit.fontawesome.com/f732920d38.js" crossorigin="anonymous"></script>
@@ -259,7 +260,7 @@
         <h4 class="resumeTitle">Resume</h4>
           <div class="resumeLinks">
           <a href="files/rLopantzi-web-resume.pdf" class="resumeLink" download="">Save Resume</a>
-          <button id="modalBtn" class="btn">View Resume</button>
+          <a id="modalBtn" class="resumeLink">View Resume</a>
         </div>
         <div id="modal">
           <div id="modal-content">
@@ -275,13 +276,16 @@
       <section id="contact" class="secStyle" data-aos="fade-down">
 
         <h2 class="titleSec">Contact</h2>
-        <p class="contactP">Open for opportunities, available for collaborations and suggestions. Or just fancy saying hello, then get in touch.</p>
+        <p class="contactP">Open for opportunities, available for collaborations and suggestions. Or just simply want to say hello, then get in touch.</p>
 
         <div class="form-content">
           <form action="https://formspree.io/mjvynjvj" method="POST">
-            <input type="text" name="name" placeholder="Full name">
-            <input type="email" name="reply_to" placeholder="Email">
-            <textarea name="message" placeholder="Message"></textarea>
+            <label for="name">Name:</label>
+            <input type="text" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" name="reply_to" required>
+            <label for="message">Message:</label>
+            <textarea name="message" required></textarea>
             <input type="submit" class="submit-btn" value="Send">
           </form>
           <div class="other-info">

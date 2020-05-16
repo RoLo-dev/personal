@@ -11,6 +11,7 @@ close.addEventListener('click', exit);
 function removeFade(){
   if(mobileOnly.matches){
     specialties.setAttribute("data-aos", "");
+    console.log("Hello");
   }
 }
 removeFade();
