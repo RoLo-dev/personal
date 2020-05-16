@@ -164,7 +164,7 @@ header {
 
 /* Specialties */
 #mySpecialties {
-  padding-top: 9rem;
+  padding-top: 8.5rem;
   margin-bottom: 4rem;
 }
 .specialtiesWrap {
@@ -224,6 +224,7 @@ header {
   font-size: 1.15rem;
 }
 .skills {
+  font-size: 0.85rem;
   color: orangered;
 }
 .projectLinks{
@@ -255,6 +256,7 @@ header {
   background-color: transparent;
   color: #8b8b8b;
   border-color: #8b8b8b;
+  cursor: pointer;
   transition: all 0.2s ease-out;
 }
 

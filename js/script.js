@@ -11,7 +11,6 @@ close.addEventListener('click', exit);
 function removeFade(){
   if(mobileOnly.matches){
     specialties.setAttribute("data-aos", "");
-    console.log("Hello");
   }
 }
 removeFade();
@@ -23,36 +22,9 @@ function exit(){
   leftCol.classList.remove('show');
 }
 
-// This is for the scrollbar
-$(window).scroll(function() {
-  var wintop = $(window).scrollTop(), docheight = 
-
-  $(document).height(), winheight = $(window).height();
-  var scrolled = (wintop/(docheight - winheight))*100;
-
-  $('.scroll-line').css('width', (scrolled + '%'));
-});
-
-// This code is for smooth scrolling effect
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    if (this.hash !== "b") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 300, function(){
-
-        window.location.hash = hash;
-      });
-    } // End if
-  });
+// This is for the smooth scroll
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 200
 });
 
 // This is for the modal
