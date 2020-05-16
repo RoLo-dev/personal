@@ -6,12 +6,9 @@
 }
 html {
   font-family: 'Spartan', sans-serif;
-  /* background-color: #1F262D; */
-  /* background-color: ; */
   scroll-behavior: smooth;
   overflow-y: scroll;
   font-weight: 400;
-  /* color: #fff; */
   font-size: 18px;
 }
 ::-webkit-scrollbar{
@@ -55,7 +52,6 @@ p{
   height: 100vh;
   top: 0;
   left: 0;
-  /* background-color: #091119; */
   background-color: #000;
   display: flex;
   flex-direction: column;
@@ -115,7 +111,6 @@ header {
   height: 2rem;
   width: 70%;
   position: fixed;
-  /* background: #1F262D; */
   background: #fff;
 }
 .scroll-line {
@@ -123,7 +118,6 @@ header {
   height: 4px;
   margin-top: 0.9rem;
   border-radius: 20px;
-  /* background: #8B8B8B; */
   background: #000;
 }
 
