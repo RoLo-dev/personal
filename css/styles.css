@@ -409,7 +409,6 @@ form textarea::placeholder{
   width: 500px;
   height: 400px;
 }
-
 .contactInfo,
 .contactLinks{
   display: flex;
@@ -427,7 +426,7 @@ form textarea::placeholder{
 .contactLinks i{
   font-size: 2.25rem;
   margin: 0 1rem;
-  color: #fff;
+  color: #000;
   transition: color 0.5s ease-out;
 }
 .contactInfo i:hover,

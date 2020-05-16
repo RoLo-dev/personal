@@ -207,7 +207,7 @@
 
     .mobileBanner{
         visibility: visible;
-        height: 15rem;
+        height: 20rem;
         display: flex;
         align-items: center;
         justify-content: center;
