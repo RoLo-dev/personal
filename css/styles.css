@@ -422,11 +422,13 @@ form textarea::placeholder{
   margin-top: 2rem;
   visibility: hidden;
 }
-.contactInfo i,
+.contactInfo i{
+  color: #000;
+}
 .contactLinks i{
   font-size: 2.25rem;
   margin: 0 1rem;
-  color: #000;
+  color: #fff;
   transition: color 0.5s ease-out;
 }
 .contactInfo i:hover,
