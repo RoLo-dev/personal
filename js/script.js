@@ -50,7 +50,7 @@ window.addEventListener('click', outsideModal);
 
 function openModal() {
   modalCntnt.style.top = '0';
-  modal.style.opacity = '0.94';
+  modal.style.opacity = '1';
   modal.style.visibility = 'visible';
 }
 function closeModal() {
