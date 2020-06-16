@@ -226,6 +226,14 @@ header {
   overflow: hidden;
   margin-bottom: 1.25rem;
 }
+.video-container{
+  margin-bottom: 1rem;
+}
+.video-container iframe{
+  width: 100%;
+  min-height: 15rem;
+  height: 20rem;
+}
 .projectText > *{
   margin-bottom: 10px;
 }
