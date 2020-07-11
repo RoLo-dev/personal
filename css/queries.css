@@ -201,6 +201,51 @@
     #mobileNav #open:active{
         transform: scale(0.97);
     }
+
+    #mobile-openBtn{
+        display: block;
+        background-color: cadetblue;
+        padding: 1.25rem 0.5rem;
+    }
+    #mobile-openBtn:hover{
+        cursor: pointer;
+    }
+    #mobile-openBtn:active{
+        transform: scale(0.95);
+    }
+    .openIcon{
+    display: block;
+    position: relative;
+    }
+    .openIcon,
+    .openIcon::before,
+    .openIcon::after{
+    width: 2rem;
+    height: 3px;
+    background: #000;
+    border-radius: 30px;
+
+    transition: transform 300ms ease-in-out, opacity 200ms linear;
+    }
+    .openIcon::before,
+    .openIcon::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    }
+    .openIcon::before{bottom: 9px;}
+    .openIcon::after{top: 9px;}
+
+    .animate{
+    transform: rotate(45deg);
+    }
+    .animate::before{
+    opacity: 0;
+    }
+    .animate::after{
+    transform: rotate(90deg) translate(-9px);
+    }
+
     #mobileNav .logo{
         width: 8%;
     }
