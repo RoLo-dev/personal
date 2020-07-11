@@ -1,12 +1,16 @@
 // This is for the mobile nav
 let mobileOnly = window.matchMedia('(max-width: 700px)');
-const open = document.getElementById('open');
-const close = document.getElementById('close');
+// const open = document.getElementById('open');
+// const mobileNav = document.getElementById('mobile-nav');
+const openIcon = document.querySelector('.openIcon');
+const openNavBtn = document.getElementById('mobile-openBtn');
+// const close = document.getElementById('close');
 const leftCol = document.getElementById('leftCol');
 const specialties = document.getElementById('mySpecialties');
 
-open.addEventListener('click', add);
-close.addEventListener('click', exit);
+// open.addEventListener('click', add);
+// close.addEventListener('click', exit);
+openNavBtn.addEventListener('click', openNavMenu);
 
 function removeFade(){
   if(mobileOnly.matches){
@@ -16,11 +20,9 @@ function removeFade(){
 }
 removeFade();
 
-function add(){
-  leftCol.classList.add('show');
-}
-function exit(){
-  leftCol.classList.remove('show');
+function openNavMenu(){
+  openIcon.classList.toggle('animate');
+  leftCol.classList.toggle('show');
 }
 
 // This is for the scrollbar

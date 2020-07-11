@@ -187,24 +187,8 @@
         justify-content: space-between;
         align-items: center;
     }
-    #mobileNav #open{
-        font-size: 2.5rem;
-        color: #000;
-        display: block;
-        transition: all 0.5s ease-out;
-    }
-    #mobileNav #open:hover{
-        color: #8B8B8B;
-        cursor: pointer;
-        transition: color 0.3s ease-in;
-    }
-    #mobileNav #open:active{
-        transform: scale(0.97);
-    }
-
     #mobile-openBtn{
         display: block;
-        background-color: cadetblue;
         padding: 1.25rem 0.5rem;
     }
     #mobile-openBtn:hover{
