@@ -3,6 +3,7 @@ let mobileOnly = window.matchMedia('(max-width: 700px)');
 const openIcon = document.querySelector('.openIcon');
 const openNavBtn = document.getElementById('mobile-openBtn');
 const leftCol = document.getElementById('leftCol');
+const body = document.querySelector('body');
 const specialties = document.getElementById('mySpecialties');
 
 openNavBtn.addEventListener('click', openNavMenu);
@@ -26,8 +27,8 @@ function openNavMenu(){
 //   }
 // }
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target == bodyl) {
+    leftCol.classList.toggle('show');
   }
 }
 
