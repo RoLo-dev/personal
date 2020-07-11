@@ -3,16 +3,15 @@ let mobileOnly = window.matchMedia('(max-width: 700px)');
 const openIcon = document.querySelector('.openIcon');
 const openNavBtn = document.getElementById('mobile-openBtn');
 const leftCol = document.getElementById('leftCol');
-const body = document.querySelector('body');
+const rightCol = document.getElementById('rightCol');
 const specialties = document.getElementById('mySpecialties');
 
 openNavBtn.addEventListener('click', openNavMenu);
-// leftCol.addEventListener('click', outsideClick);
+leftCol.addEventListener('click', outsideClick);
 
 function removeFade(){
   if(mobileOnly.matches){
     specialties.setAttribute("data-aos", "");
-    console.log("Hello");
   }
 }
 removeFade();
@@ -21,14 +20,11 @@ function openNavMenu(){
   openIcon.classList.toggle('animate');
   leftCol.classList.toggle('show');
 }
-// function outsideClick(e) {
-//   if(e.target != leftCol) {
-//     leftCol.classList.toggle('show');
-//   }
-// }
-window.onclick = function(event) {
-  if (event.target == bodyl) {
+function outsideClick(e) {
+  if(e.target = rightCol) {
+    console.log('clicked');
     leftCol.classList.toggle('show');
+    openIcon.classList.toggle('animate');
   }
 }
 
