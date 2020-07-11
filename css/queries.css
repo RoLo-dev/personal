@@ -6,10 +6,10 @@
 
 @media only screen and (max-width: 1600px){
     .flexContainer div{
-        width: 55%;
+        width: 52%;
     }
     .flexContainer figure{
-        width: 40%;
+        width: 45%;
     }
 
     .other-info iframe{
@@ -22,11 +22,23 @@
         width: 150px;
     }
 
-    .flexContainer div{
+    /* .flexContainer div{
         width: 50%;
     }
     .flexContainer figure{
         width: 48%;
+    } */
+
+    /* About */
+    .flexContainer{
+        flex-direction: column;
+    }
+    .flexContainer figure{
+        align-self: center;
+        margin-bottom: 1.25rem;
+    }
+    .flexContainer div{
+        width: 100%;
     }
 }
 
@@ -54,18 +66,6 @@
     }
     .specialtiesWrap p{
         font-size: 0.9rem;
-    }
-
-    /* About */
-    .flexContainer{
-        flex-direction: column;
-    }
-    .flexContainer figure{
-        align-self: center;
-        margin-bottom: 1.25rem;
-    }
-    .flexContainer div{
-        width: 100%;
     }
 
     /* Contact */
