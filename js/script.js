@@ -3,7 +3,6 @@ let mobileOnly = window.matchMedia('(max-width: 700px)');
 const openIcon = document.querySelector('.openIcon');
 const openNavBtn = document.getElementById('mobile-openBtn');
 const leftCol = document.getElementById('leftCol');
-const rightCol = document.getElementById('rightCol');
 const specialties = document.getElementById('mySpecialties');
 
 openNavBtn.addEventListener('click', openNavMenu);
@@ -21,7 +20,7 @@ function openNavMenu(){
   leftCol.classList.toggle('show');
 }
 function outsideClick(e) {
-  if(e.target = rightCol) {
+  if(e.target = leftCol) {
     console.log('clicked');
     leftCol.classList.toggle('show');
     openIcon.classList.toggle('animate');

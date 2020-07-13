@@ -111,7 +111,6 @@
 
     /* Projects */
     .grid {
-        /* grid-gap: 3rem; */
         grid-template-columns: 1fr;
     }
 
@@ -134,22 +133,28 @@
     }
 
     /* Left Column */
+    /* I have to work somewhere here to make it work */
     #leftCol{
         position: fixed;
         z-index: 2;
         top: 0;
         left: 0;
-        width: 275px;
+        width: 100%;
+        visibility: hidden;
         transform: translateX(-275px);
         min-height: 100vh;
-        transition: transform 0.4s ease-out;
+        transition: all 0.4s ease-out;
+    }
+    .menu-container{
+        width: 275px;
     }
     #empty_span{
         display: block;
     }
     #leftCol.show{
+        visibility: visible;
         transform: translateX(0);
-        transition: transform 0.2s ease-in;
+        transition: all 0.2s ease-in;
     }
     /* Right Column */
     #rightCol {
