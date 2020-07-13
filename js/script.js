@@ -20,7 +20,7 @@ function openNavMenu(){
   leftCol.classList.toggle('show');
 }
 function outsideClick(e) {
-  if(e.target = leftCol) {
+  if(e.target === leftCol) {
     console.log('clicked');
     leftCol.classList.toggle('show');
     openIcon.classList.toggle('animate');
