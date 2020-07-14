@@ -1,11 +1,13 @@
 // This is for the mobile nav
 let mobileOnly = window.matchMedia('(max-width: 700px)');
-const openIcon = document.querySelector('.openIcon');
+const openIcon = document.querySelectorAll('.openIcon');
 const openNavBtn = document.getElementById('mobile-openBtn');
 const leftCol = document.getElementById('leftCol');
+const floatingMenu = document.getElementById('floating-menu');
 const specialties = document.getElementById('mySpecialties');
 
 openNavBtn.addEventListener('click', openNavMenu);
+floatingMenu.addEventListener('click', openNavMenu);
 leftCol.addEventListener('click', outsideClick);
 
 function removeFade(){
@@ -21,7 +23,6 @@ function openNavMenu(){
 }
 function outsideClick(e) {
   if(e.target === leftCol) {
-    console.log('clicked');
     leftCol.classList.toggle('show');
     openIcon.classList.toggle('animate');
   }
@@ -74,7 +75,7 @@ function outsideModal(e) {
 
 // This is for the mobile menu that pops up when you scroll down
 window.onscroll = function() {scrollFunction()};
-const mobileMenu =  document.getElementById('mobile-menu');
+const mobileMenu =  document.getElementById('floating-menu');
 
 function scrollFunction() {
   if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {

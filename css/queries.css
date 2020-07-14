@@ -177,12 +177,11 @@
     }
     #mobile-openBtn{
         display: block;
+        cursor: pointer;
         padding: 1.25rem 0.5rem;
     }
-    #mobile-openBtn:hover{
-        cursor: pointer;
-    }
-    #mobile-openBtn:active{
+    #mobile-openBtn:active,
+    #floating-menu:active {
         transform: scale(0.95);
     }
     .openIcon{
@@ -221,7 +220,7 @@
     #floating-menu {
         position: fixed;
         display: block;
-        background: #000;
+        background: rgb(25, 25, 25);
         bottom: 20px;
         right: 20px;
         z-index: 10;
