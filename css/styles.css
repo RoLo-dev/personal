@@ -224,14 +224,17 @@ header {
   overflow: hidden;
   margin-bottom: 1.25rem;
 }
+#graphicProjects .grid {
+  grid-gap: 0;
+  grid-template-columns: repeat(3, 1fr);
+}
 #graphicProjects figure {
-  width: 90%;
-  height: 425px;
+  /* width: 90%; */
+  height: 350px;
+  margin-bottom: 0;
   overflow: hidden;
 }
 #graphicProjects figure img {
-  height: 100%;
-  width: 100%;
   transform: scale(1.5);
   transition: transform 0.1s ease-in;
 }
