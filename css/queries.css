@@ -195,6 +195,7 @@
     height: 3px;
     background: #000;
     border-radius: 30px;
+    pointer-events: none;
 
     transition: transform 300ms ease-in-out, opacity 200ms linear;
     }

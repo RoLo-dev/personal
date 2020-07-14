@@ -18,13 +18,17 @@ function removeFade(){
 removeFade();
 
 function openNavMenu(){
-  openIcon.classList.toggle('animate');
+  openIcon.forEach((menu) => {
+    menu.classList.toggle('animate');
+  })
   leftCol.classList.toggle('show');
 }
 function outsideClick(e) {
   if(e.target === leftCol) {
     leftCol.classList.toggle('show');
-    openIcon.classList.toggle('animate');
+    openIcon.forEach((menu) => {
+      menu.classList.toggle('animate');
+    })
   }
 }
 
