@@ -225,23 +225,19 @@ header {
   margin-bottom: 1.25rem;
 }
 #graphicProjects figure {
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 425px;
   overflow: hidden;
 }
 #graphicProjects figure img {
   height: 100%;
   width: 100%;
-  transform: scale(1.65);
+  transform: scale(1.5);
   transition: transform 0.1s ease-in;
 }
 #graphicProjects figure img:hover {
-  transform: scale(0.97);
-  transition:  transform 0.4s ease-in;
-}
-#graphicProjects figure .rectangle:hover {
-  transform: scale(0.9);
-  transition:  transform 0.4s ease-in;
+  transform: scale(1);
+  transition: transform 0.4s ease-in;
 }
 .video-container{
   margin-bottom: 1rem;
