@@ -229,7 +229,6 @@ header {
   grid-template-columns: repeat(3, 1fr);
 }
 #graphicProjects figure {
-  /* width: 90%; */
   height: 350px;
   margin-bottom: 0;
   overflow: hidden;

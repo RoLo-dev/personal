@@ -22,13 +22,6 @@
         width: 150px;
     }
 
-    /* .flexContainer div{
-        width: 50%;
-    }
-    .flexContainer figure{
-        width: 48%;
-    } */
-
     /* About */
     .flexContainer{
         flex-direction: column;
@@ -50,6 +43,10 @@
     .flexContainer figure{
         width: 48%;
         height: 90%;
+    }
+
+    #graphicProjects figure {
+        height: 300px;
     }
 }
 
@@ -112,6 +109,10 @@
     /* Projects */
     .grid {
         grid-template-columns: 1fr;
+    }
+
+    #graphicProjects figure {
+        height: 230px;
     }
 
     /* Contact */
@@ -289,6 +290,10 @@
 }
 
 @media only screen and (max-width: 700px){
+    #graphicProjects .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .resumeLinks .resumeLink{
         padding: 7px 20px;
     }
@@ -296,5 +301,11 @@
 @media only screen and (max-width: 600px){
     .mobileBanner{
         height: 25rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #graphicProjects figure {
+        height: 180px;
     }
 }
