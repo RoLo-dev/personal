@@ -37,6 +37,12 @@ let galleryImgs = document.querySelectorAll('.graphicsGallery');
 let previousImg;
 let windowWidth = window.innerWidth;
 
+if(galleryImgs) {
+  galleryImgs.forEach((image) => {
+    // image.onclick()
+  })
+}
+
 // This is for the scrollbar
 $(window).scroll(function() {
   var wintop = $(window).scrollTop(), docheight = 

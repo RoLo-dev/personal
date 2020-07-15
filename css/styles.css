@@ -241,6 +241,38 @@ header {
   transform: scale(1);
   transition: transform 0.4s ease-in;
 }
+.graphicsGallery {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img1 {
+  background-image: url(../imgs/img1.jpg);
+}
+.img2 {
+  background-image: url(../imgs/img2.jpg);
+}
+.img3 {
+  background-image: url(../imgs/img3.jpg);
+}
+.img4 {
+  background-image: url(../imgs/img4.jpg);
+}
+.img5 {
+  background-image: url(../imgs/img5.jpg);
+}
+.img6 {
+  background-image: url(../imgs/img6.jpg);
+}
+.img7 {
+  background-image: url(../imgs/img7.jpg);
+}
+.img8 {
+  background-image: url(../imgs/img8.jpg);
+}
+.img9 {
+  background-image: url(../imgs/img9.jpg);
+}
 .video-container{
   margin-bottom: 1rem;
 }
