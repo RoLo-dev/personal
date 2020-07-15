@@ -32,6 +32,11 @@ function outsideClick(e) {
   }
 }
 
+// This is for the galley
+let galleryImgs = document.querySelectorAll('.graphicsGallery');
+let previousImg;
+let windowWidth = window.innerWidth;
+
 // This is for the scrollbar
 $(window).scroll(function() {
   var wintop = $(window).scrollTop(), docheight = 
