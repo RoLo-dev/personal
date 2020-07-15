@@ -59,6 +59,10 @@ if(galleryImgs) {
   })
 }
 
+function closeImg() {
+  document.querySelector('.img-window').remove();
+}
+
 // This is for the scrollbar
 $(window).scroll(function() {
   var wintop = $(window).scrollTop(), docheight = 
