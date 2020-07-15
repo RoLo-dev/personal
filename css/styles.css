@@ -273,6 +273,20 @@ header {
 .img9 {
   background-image: url(../imgs/img9.jpg);
 }
+.img-window {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.87);
+  position: fixed;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 7;
+}
+.img-window img {
+  width: 68vh;
+}
 .video-container{
   margin-bottom: 1rem;
 }

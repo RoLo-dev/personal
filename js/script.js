@@ -38,8 +38,24 @@ let previousImg;
 let windowWidth = window.innerWidth;
 
 if(galleryImgs) {
-  galleryImgs.forEach((image) => {
-    // image.onclick()
+  galleryImgs.forEach((image, index) => {
+    image.onclick = function() {
+      let getElementCSS = window.getComputedStyle(image);
+      let getFullImgURL = getElementCSS.getPropertyValue("background-image");
+      let getImgURL = getFullImgURL.split('/imgs/');
+      let setNewImgURL = getImgURL[1].replace('")', '');
+
+      previousImg = index + 1;
+      let container = document.body;
+      let newImgWindow = document.createElement('div');
+      container.appendChild(newImgWindow);
+      newImgWindow.setAttribute('class', 'img-window');
+      newImgWindow.setAttribute('onclick', 'closeImg()');
+
+      let newImg = document.createElement('img');
+      newImgWindow.appendChild(newImg);
+      newImg.setAttribute('src', `imgs/${setNewImgURL}`);
+    }
   })
 }
 
