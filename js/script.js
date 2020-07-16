@@ -32,7 +32,7 @@ function outsideClick(e) {
   }
 }
 
-// This is for the galley
+// This is for the gallery
 let galleryImgs = document.querySelectorAll('.graphicsGallery');
 let previousImg;
 let windowWidth = window.innerWidth;
@@ -40,7 +40,7 @@ let windowWidth = window.innerWidth;
 galleryImgs.forEach((image, index) => {
   image.addEventListener('click', function() {
     let getElementCSS = window.getComputedStyle(image);
-    let getFullImgURL = getElementCSS.getPropertyValue("background-image");
+    let getFullImgURL = getElementCSS.getPropertyValue('background-image');
     let getImgURL = getFullImgURL.split('/imgs/');
     let setNewImgURL = getImgURL[1].replace('")', '');
   
