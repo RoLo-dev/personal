@@ -277,6 +277,9 @@ header {
 .img10 {
   background-image: url(../imgs/img10.jpg);
 }
+.img11 {
+  background-image: url(../imgs/img11.png);
+}
 .img-window {
   height: 100vh;
   width: 100vw;
