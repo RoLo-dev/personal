@@ -248,7 +248,7 @@ header {
   cursor: pointer;
 }
 .img1 {
-  background-image: url(../imgs/img1.jpg);
+  background-image: url(../imgs/img1.svg);
 }
 .img2 {
   background-image: url(../imgs/img2.jpg);
@@ -275,10 +275,10 @@ header {
   background-image: url(../imgs/img9.jpg);
 }
 .img10 {
-  background-image: url(../imgs/img10.jpg);
+  background-image: url(../imgs/img10.svg);
 }
 .img11 {
-  background-image: url(../imgs/img11.png);
+  background-image: url(../imgs/img11.svg);
 }
 .img-window {
   height: 100vh;
