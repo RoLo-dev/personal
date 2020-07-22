@@ -272,13 +272,16 @@ header {
   background-image: url(../imgs/img7.jpg);
 }
 .img9 {
-  background-image: url(../imgs/img9.jpg);
+  background-image: url(../imgs/img12.jpg);
 }
 .img10 {
-  background-image: url(../imgs/img10.svg);
+  background-image: url(../imgs/img9.jpg);
 }
 .img11 {
   background-image: url(../imgs/img11.svg);
+}
+.img12 {
+  background-image: url(../imgs/img10.svg);
 }
 .img-window {
   height: 100vh;
