@@ -62,14 +62,14 @@ function closeImg() {
 }
 
 // This is for the scrollbar
-$(window).scroll(function() {
-  var wintop = $(window).scrollTop(), docheight = 
+// $(window).scroll(function() {
+//   var wintop = $(window).scrollTop(), docheight = 
 
-  $(document).height(), winheight = $(window).height();
-  var scrolled = (wintop/(docheight - winheight))*100;
+//   $(document).height(), winheight = $(window).height();
+//   var scrolled = (wintop/(docheight - winheight))*100;
 
-  $('.scroll-line').css('width', (scrolled + '%'));
-});
+//   $('.scroll-line').css('width', (scrolled + '%'));
+// });
 
 // This is for the smooth scroll
 var scroll = new SmoothScroll('a[href*="#"]', {
