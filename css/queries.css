@@ -126,9 +126,9 @@
     #arrow {
         display: none;
     }
-    #scrollLine {
+    /* #scrollLine {
         display: none;
-    }
+    } */
     ::-webkit-scrollbar{
         visibility: visible;
     }
