@@ -462,6 +462,7 @@ form textarea::placeholder{
 }
 #input-file{
   border: none;
+  padding: 0;
 }
 .submit-btn{
     width: 190px;
