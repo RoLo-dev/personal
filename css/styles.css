@@ -460,10 +460,11 @@ form input::placeholder,
 form textarea::placeholder{
     transition: all 0.7s;
 }
-#input-file{
+/* #input-file{
   border: none;
+  height: auto;
   padding: 0;
-}
+} */
 .submit-btn{
     width: 190px;
     height: 2.25rem;
