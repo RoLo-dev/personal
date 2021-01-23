@@ -106,6 +106,18 @@ function scrollFunction() {
   }
 }
 
+// Updating the year on the footer
+let today = new Date();
+let year = today.getFullYear();
+let footerYear = document.getElementById('footer-year');
+
+function updateYear() {
+  footerYear.innerText = year;
+  console.log(year);
+}
+
+updateYear();
+
 AOS.init({
     offset: 300,
     duration: 850
