@@ -523,4 +523,6 @@ form textarea::placeholder{
 footer {
   background-color: #000;
   color: #fff;
+  padding: 2rem 0;
+  text-align: center;
 }
