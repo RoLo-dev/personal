@@ -526,3 +526,9 @@ footer {
   padding: 2rem 0;
   text-align: center;
 }
+footer a {
+  color: #fff;
+}
+footer a:hover {
+  cursor: pointer;
+}
