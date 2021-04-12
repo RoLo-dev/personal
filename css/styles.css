@@ -230,16 +230,16 @@ header {
   grid-gap: 0;
   grid-template-columns: repeat(3, 1fr);
 }
+.grid>div{
+  overflow: hidden;
+}
 #graphicProjects figure {
   height: 350px;
   margin-bottom: 0;
-  overflow: hidden;
-}
-#graphicProjects figure img {
-  transform: scale(1.5);
+  transform: scale(1.25);
   transition: transform 0.1s ease-in;
 }
-#graphicProjects figure img:hover {
+#graphicProjects figure:hover {
   transform: scale(1);
   transition: transform 0.4s ease-in;
 }
