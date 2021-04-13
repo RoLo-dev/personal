@@ -66,7 +66,7 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 	speed: 200
 });
 
-// This is for the modal
+// This is for the modal for the resume
 let modalBtn = document.getElementById('modalBtn');
 let modal = document.getElementById('modal');
 let modalCntnt = document.getElementById('modal-content');
