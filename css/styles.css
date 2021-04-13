@@ -103,6 +103,9 @@ h4{
   padding-left: 12px;
   transition: all .3s ease-in-out;
 }
+.navLinks ul li a.active-link{
+  color: orangered;
+}
 .logo p{
   color: #fff;
   letter-spacing: 2px;

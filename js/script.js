@@ -1,3 +1,26 @@
+// Nav link active on section scroll
+const sections = document.querySelectorAll('section');
+const navLink = document.querySelectorAll('.navLink');
+
+window.addEventListener("scroll", ()=> {
+  let current = "";
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+
+    if(pageYOffset >= sectionTop){
+      current = section.getAttribute("id");
+    }
+  })
+  navLink.forEach(a => {
+    a.classList.remove("active-link");
+    if(a.classList.contains(current)){
+      a.classList.add("active-link");
+    }
+  })
+})
+
 // This is for the mobile nav
 let mobileOnly = window.matchMedia('(max-width: 700px)');
 const openIcon = document.querySelectorAll('.openIcon');
