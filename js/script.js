@@ -142,6 +142,6 @@ function updateYear() {
 updateYear();
 
 AOS.init({
-    offset: 300,
+    offset: 200,
     duration: 850
 });

@@ -353,6 +353,13 @@ header {
 }
 
 /* About */
+#about{
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+}
+#about h2{
+  margin-top: 0;
+}
 .flexContainer{
   display: flex;
   justify-content: space-between;
@@ -472,11 +479,6 @@ form input::placeholder,
 form textarea::placeholder{
     transition: all 0.7s;
 }
-/* #input-file{
-  border: none;
-  height: auto;
-  padding: 0;
-} */
 .submit-btn{
     width: 190px;
     height: 2.25rem;
