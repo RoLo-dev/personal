@@ -138,6 +138,7 @@ function updateYear() {
   footerYear.innerText = year;
   console.log(year);
 }
+updateYear();
 
 // FORM SUBMISSION VALUE FROM NAME INPUT
 let nameValue = document.getElementById("name")
@@ -147,12 +148,10 @@ let submitBtn = document.querySelector(".submit-btn")
 submitBtn.addEventListener('click', addNameOfSender)
 
 function addNameOfSender(){
-  console.log("hello there")
   subject.setAttribute('value', 'New Submission from ' + nameValue.value)
 }
 
-updateYear();
-
+// For animations
 AOS.init({
     offset: 200,
     duration: 850
