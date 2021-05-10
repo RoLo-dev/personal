@@ -1,5 +1,3 @@
-const e = require("express");
-
 // Nav link active on section scroll
 const sections = document.querySelectorAll('section');
 const navLink = document.querySelectorAll('.navLink');
@@ -150,7 +148,7 @@ let submitBtn = document.querySelector(".submit-btn")
 submitBtn.addEventListener('click', addNameOfSender)
 
 function addNameOfSender(e){
-  // e.preventDefault
+  e.preventDefault
   subject.setAttribute('value', 'New Submission from ' + nameValue.value)
 }
 
