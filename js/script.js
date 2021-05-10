@@ -139,6 +139,18 @@ function updateYear() {
   console.log(year);
 }
 
+// FORM SUBMISSION VALUE FROM NAME INPUT
+let nameValue = document.getElementById("name")
+let subject = document.getElementById("subject")
+let submitBtn = document.querySelector(".submit-btn")
+
+submitBtn.addEventListener('click', addNameOfSender)
+
+function addNameOfSender(){
+  console.log("hello there")
+  subject.setAttribute('value', 'New Submission from ' + nameValue.value)
+}
+
 updateYear();
 
 AOS.init({
