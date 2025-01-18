@@ -17,20 +17,15 @@ html {
 body{
   -ms-overflow-style: none;
   overflow: -moz-scrollbars-none;
+  overflow-x: hidden;
 }
-a {
-  text-decoration: none;
-}
+a{text-decoration: none;}
 p{
   line-height: 25px;
   font-size: 0.9rem;
 }
-ul li{
-  list-style: none;
-}
-h4{
-  font-size: 1.25rem;
-}
+ul li{list-style: none;}
+h4{font-size: 1.25rem;}
 .wrapper {
   width: 90%;
   margin: 0 auto;
