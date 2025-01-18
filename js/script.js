@@ -95,9 +95,9 @@ let modal = document.getElementById('modal');
 let modalCntnt = document.getElementById('modal-content');
 let closeBtn = document.getElementById('closeBtn');
 
-closeBtn.addEventListener('click', closeModal);
-modalBtn.addEventListener('click', openModal);
-window.addEventListener('click', outsideModal);
+// closeBtn.addEventListener('click', closeModal);
+// modalBtn.addEventListener('click', openModal);
+// window.addEventListener('click', outsideModal);
 
 function openModal() {
   modalCntnt.style.top = '0';
